@@ -1,20 +1,33 @@
 <?php
-include_once ('Shape.php');
-class Circle extends Shape {
- public $radius;
 
- public function __construct($name, $radius)
- {
-     parent::__construct($name);
-     $this->radius = $radius;
- }
+class Circle
+{
+    public $radius;
+    public $name;
 
- public function calculateArea(){
-     return pi() * pow($this->radius, 2);
- }
+    public function __construct($name, $radius)
+    {
+        $this->$radius;
+        $this->$name;
+    }
 
- public function calculatePerimeter(){
-     return pi() * $this->radius * 2;
- }
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+
+    public function getRadius()
+    {
+        $this->radius;
+    }
+
+    public function setRadius($radius)
+    {
+        $this->radius = $radius;
+    }
 }
-?>
